@@ -1,11 +1,39 @@
 <html>
 <head>
 	<title>Slap Object Game</title>
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="">
-	<script src=""></script>
+	<link rel="stylesheet" href="game.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
-	
+    <section class="container">
+            
+        </section class="row">
+        
+            <div class="panel panel-primary" id="player-panel">
+                <div class="panel-heading")>
+                    <h1 id="name"></h1>
+                    <button class="btn btn-warning" id="name-btn" onclick="newName()">Victim's Name</button>
+                    <span id="health-count">Health: 100</span>
+                    <span id="slap-count">0 Slaps</span>
+                    <span id="kick-count">0 Kicks</span>
+                    <span id="punch-count">0 Punches</span>
+                </div>
+                
+                <div class="panel-body">
+                    <p>The player has been equipped with:</p>
+                    <p id="player-items"></p>
+                    <button class="btn btn-success" id="helmet" onclick="equip(helmet)">Helmet</button>
+                    <button class="btn btn-success" id="shield" onclick="equip(shield)">Shield</button>
+                    <button class="btn btn-success" id="armor" onclick="equip(armor)">Armor</button>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Emoticon_Stick_Figure.svg" alt="stick figure">
+                    <button class="btn btn-default" id="slap" onclick="slap();">SLAP!</button>
+                    <button class="btn btn-default" id="kick" onclick="kick();">KICK!</button>
+                    <button class="btn btn-default" id="punch" onclick="punch();">PUNCH!</button>
+                </div>
+                
+            </div>
+    </section>
+    
+	<script type="text/javascript" src="game.js"></script>
 </body>
 </html>
